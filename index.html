@@ -1,206 +1,495 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Erik di Biase</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Erik di Biase — Game Developer / Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,600;9..144,900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-		<!-- Header -->
-			<div id="header">
+<!-- Grain + scanline overlays -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
 
-				<div class="top">
+<!-- Header / Nav -->
+<header class="site-header">
+  <div class="brand">
+    <span class="brand-mark">◆</span>
+    <span class="brand-name">ERIK&nbsp;DI&nbsp;BIASE</span>
+  </div>
+  <nav class="site-nav">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="status">
+    <span class="dot"></span>
+    <span>AVAILABLE FOR HIRE</span>
+  </div>
+</header>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.png" alt="" /></span>
-							<h1 id="title">Erik di Biase</h1>
-							<p>Game Developer</p>
-						</div>
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-meta">
+    <span>DESIGN AND PUNCHLINE CREATED WITH CLAUDE</span>
+    <span>PORTFOLIO ↗ 2026</span>
+    <span>v1.0.0</span>
+  </div>
+  <h1 class="hero-title">
+    I make <span class="italic">odd</span> games <span class="italic">that&nbsp;ship.</span>
+  </h1>
+  <p class="hero-sub">
+    Independent game developer working across engines, genres, and impossible deadlines.
+    Currently obsessed with procedural systems, immersive technologies, and rpgs.
+  </p>
+  <div class="hero-stats">
+    <div><strong>05</strong><span>SHIPPED TITLES</span></div>
+    <div><strong>7yr</strong><span>BUILDING WORLDS</span></div>
+    <div><strong>∞</strong><span>BUGS SQUASHED</span></div>
+  </div>
+</section>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+<!-- Work / Portfolio -->
+<section id="work" class="work">
+  <div class="section-head">
+    <span class="section-num">// 02</span>
+    <h2>SELECTED&nbsp;WORK</h2>
+    <span class="section-line"></span>
+  </div>
 
-								Prologue's nav expects links in one of two formats:
+  <!-- PROJECT 1 -->
+  <article class="project" data-index="01">
+    <div class="project-media">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/QOuv-CLECic"
+          referrerpolicy='strict-origin-when-cross-origin'
+          title="Game trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="gallery">
+        <div class="gallery-main">
+          <img src="https://static2.vrdb.app/images/4c39ac97-a2a5-46d5-a877-d140a3f2da64.webp" alt="Bird Things screenshot 1" />
+          <span class="img-caption"><span class="caption-num">01</span> / <span class="caption-total">04</span></span>
+        </div>
+        <div class="gallery-thumbs" role="tablist">
+          <button class="thumb is-active" data-src="https://static2.vrdb.app/images/4c39ac97-a2a5-46d5-a877-d140a3f2da64.webp" aria-label="Screenshot 1">
+            <img src="https://static2.vrdb.app/images/4c39ac97-a2a5-46d5-a877-d140a3f2da64.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/16e502ad-b086-4b46-bbf7-e81a355b9a98.webp" aria-label="Screenshot 2">
+            <img src="https://static2.vrdb.app/images/16e502ad-b086-4b46-bbf7-e81a355b9a98.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/b325be9d-13db-4103-9dc3-ef2d6e56ff2d.webp" aria-label="Screenshot 3">
+            <img src="https://static2.vrdb.app/images/b325be9d-13db-4103-9dc3-ef2d6e56ff2d.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/3e2d1c46-8aeb-4449-a062-f205c38ac0a3.webp" aria-label="Screenshot 4">
+            <img src="https://static2.vrdb.app/images/3e2d1c46-8aeb-4449-a062-f205c38ac0a3.webp" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
 
-								1. Hash link (scrolls to a different section within the page)
+    <div class="project-info">
+      <div class="project-tag-row">
+        <span class="proj-num">PROJECT_01</span>
+        <time datetime="2025-11">NOV 2025</time>
+      </div>
+      <h3 class="project-title">Bird&nbsp;Things</h3>
+      <ul class="tags">
+        <li>Unity</li>
+        <li>C#</li>
+        <li>VR</li>
+        <li>Multiplayer</li>
+        <li>Solo Dev</li>
+      </ul>
+      <p class="project-desc">
+        A free chaotic multiplayer VR brawler — grow a bird army, raid human dungeons, and dominate weekly mini-game events on Meta Quest.
+        Multiplayer features are enabled by the powerful combination of Unity's Economy, Cloud and Lobby service as well as Normcore
+        allowing up to 10 players to collaborate, customize, trade, fight and enjoy an explorable island full of minigame, enemies and collectables
+      </p>
+      <div class="project-links">
+        <a href="https://www.meta.com/experiences/bird-things/28502148629401150/" class="btn" target="_blank" rel="noopener">META STORE ↗</a>
+      </div>
+    </div>
+  </article>
 
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+  <!-- PROJECT 2 -->
+  <article class="project reverse" data-index="02">
+    <div class="project-media">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/5IMq8oVy1Cg"
+          referrerpolicy='strict-origin-when-cross-origin'
+          title="Game trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="gallery">
+        <div class="gallery-main">
+          <img src="https://static2.vrdb.app/images/86d37e1a-594c-4fa7-aa90-8ab929485632.webp" alt="Project Aeroes screenshot 1" />
+          <span class="img-caption"><span class="caption-num">01</span> / <span class="caption-total">04</span></span>
+        </div>
+        <div class="gallery-thumbs" role="tablist">
+          <button class="thumb is-active" data-src="https://static2.vrdb.app/images/86d37e1a-594c-4fa7-aa90-8ab929485632.webp" aria-label="Screenshot 1">
+            <img src="https://static2.vrdb.app/images/86d37e1a-594c-4fa7-aa90-8ab929485632.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/64d6907f-4c36-46d8-a5c0-b3872f4a92c9.webp" aria-label="Screenshot 2">
+            <img src="https://static2.vrdb.app/images/64d6907f-4c36-46d8-a5c0-b3872f4a92c9.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/b00d369d-9899-4b4e-a093-494f81866bbf.webp" aria-label="Screenshot 3">
+            <img src="https://static2.vrdb.app/images/b00d369d-9899-4b4e-a093-494f81866bbf.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/31c7c107-90bb-4bb3-8032-89ef716c72bf.webp" aria-label="Screenshot 4">
+            <img src="https://static2.vrdb.app/images/31c7c107-90bb-4bb3-8032-89ef716c72bf.webp" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
 
-								2. Standard link (sends the user to another page/site)
+    <div class="project-info">
+      <div class="project-tag-row">
+        <span class="proj-num">PROJECT_02</span>
+        <time datetime="2025-04">APR 2025</time>
+      </div>
+      <h3 class="project-title">Project&nbsp;Aeroes</h3>
+      <ul class="tags">
+        <li>Unity</li>
+        <li>C#</li>
+        <li>MR</li>
+        <li>Arcade</li>
+        <li>Solo Dev</li>
+      </ul>
+      <p class="project-desc">
+        A frantic mixed reality arcade game where you guide spaceships safely through hazards that invade your own room. The game makes full use of Meta's
+        room scaling and passthorugh, challenging the players in their own space with a sets of diverse game modes, dangers, powerups and customizations.
+        Achievement, collectables and per-run statistics are also included as part of the overall progression
+      </p>
+      <div class="project-links">
+        <a href="https://www.meta.com/experiences/project-aeroes/8064388876991237/" class="btn" target="_blank" rel="noopener">META STORE ↗</a>
+      </div>
+    </div>
+  </article>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+  <!-- PROJECT 3 -->
+  <article class="project" data-index="03">
+    <div class="project-media">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/OT0PLBe0oPc"
+          referrerpolicy='strict-origin-when-cross-origin'
+          title="Game trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="gallery">
+        <div class="gallery-main">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/8ff3e443a76b8700c1ceb15d5f66fb45c9938771/ss_8ff3e443a76b8700c1ceb15d5f66fb45c9938771.1920x1080.jpg?t=1753427663" alt="HIT screenshot 1" />
+          <span class="img-caption"><span class="caption-num">01</span> / <span class="caption-total">04</span></span>
+        </div>
+        <div class="gallery-thumbs" role="tablist">
+          <button class="thumb is-active" data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/8ff3e443a76b8700c1ceb15d5f66fb45c9938771/ss_8ff3e443a76b8700c1ceb15d5f66fb45c9938771.1920x1080.jpg?t=1753427663" aria-label="Screenshot 1">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/8ff3e443a76b8700c1ceb15d5f66fb45c9938771/ss_8ff3e443a76b8700c1ceb15d5f66fb45c9938771.1920x1080.jpg?t=1753427663" alt="" />
+          </button>
+          <button class="thumb" data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/93ef884c0eba34f5f0a810195e826a353057b520/ss_93ef884c0eba34f5f0a810195e826a353057b520.1920x1080.jpg?t=1753427663" aria-label="Screenshot 2">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/93ef884c0eba34f5f0a810195e826a353057b520/ss_93ef884c0eba34f5f0a810195e826a353057b520.1920x1080.jpg?t=1753427663" alt="" />
+          </button>
+          <button class="thumb" data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/47c5ee536f050745edad77770d4a8ae404cfff0e/ss_47c5ee536f050745edad77770d4a8ae404cfff0e.1920x1080.jpg?t=1753427663" aria-label="Screenshot 3">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/47c5ee536f050745edad77770d4a8ae404cfff0e/ss_47c5ee536f050745edad77770d4a8ae404cfff0e.1920x1080.jpg?t=1753427663" alt="" />
+          </button>
+          <button class="thumb" data-src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/11584ce36791b1bc60ce5424dc951282443eea6d/ss_11584ce36791b1bc60ce5424dc951282443eea6d.1920x1080.jpg?t=1753427663" aria-label="Screenshot 4">
+            <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3555410/11584ce36791b1bc60ce5424dc951282443eea6d/ss_11584ce36791b1bc60ce5424dc951282443eea6d.1920x1080.jpg?t=1753427663" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
 
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+    <div class="project-info">
+      <div class="project-tag-row">
+        <span class="proj-num">PROJECT_03</span>
+        <time datetime="2025-03">MAR 2025</time>
+      </div>
+      <h3 class="project-title">HIT&nbsp;</h3>
+      <ul class="tags">
+        <li>Unity</li>
+        <li>C#</li>
+        <li>VR</li>
+        <li>Sandbox</li>
+      </ul>
+      <p class="project-desc">
+        A stress-relief VR sandbox — pick your weapon, pummel squishy clay heads, and watch soft-body physics do the rest. 
+        The implemented runtime clay deformation became the core foundations of a series of minimgames and weapons I contributed to create, 
+        like the clay baking and car destruction activities.
+      </p>
+      <div class="project-links">
+        <a href="https://www.meta.com/experiences/hit/9255041957895226/" class="btn" target="_blank" rel="noopener">META STORE ↗</a>
+        <a href="https://store.steampowered.com/app/3555410/HIT/" class="btn ghost" target="_blank" rel="noopener">STEAM ↗</a>
+      </div>
+    </div>
+  </article>
 
-				</div>
+  <!-- PROJECT 4 -->
+  <article class="project reverse" data-index="04">
+    <div class="project-media">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/o8jGY-kxwFA"
+          referrerpolicy='strict-origin-when-cross-origin'
+          title="Game trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="video-tabs" role="tablist">
+        <button class="vtab is-active" data-vid="o8jGY-kxwFA">VR&nbsp;/&nbsp;MR</button>
+        <button class="vtab" data-vid="KhDtund7n-g">DESKTOP</button>
+      </div>
+      <div class="gallery">
+        <div class="gallery-main">
+          <img src="https://static2.vrdb.app/images/ee631827-42d1-4f3b-9b74-aad203515437.webp" alt="Noun Town screenshot 1" />
+          <span class="img-caption"><span class="caption-num">01</span> / <span class="caption-total">04</span></span>
+        </div>
+        <div class="gallery-thumbs" role="tablist">
+          <button class="thumb is-active" data-src="https://static2.vrdb.app/images/ee631827-42d1-4f3b-9b74-aad203515437.webp" aria-label="Screenshot 1">
+            <img src="https://static2.vrdb.app/images/ee631827-42d1-4f3b-9b74-aad203515437.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/df0651a5-b970-49cb-917a-e1fe57cd88bd.webp" aria-label="Screenshot 2">
+            <img src="https://static2.vrdb.app/images/df0651a5-b970-49cb-917a-e1fe57cd88bd.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/f4cad4fb-adc4-44de-be21-79bd11dd52e2.webp" aria-label="Screenshot 3">
+            <img src="https://static2.vrdb.app/images/f4cad4fb-adc4-44de-be21-79bd11dd52e2.webp" alt="" />
+          </button>
+          <button class="thumb" data-src="https://static2.vrdb.app/images/f201d647-52e6-4039-a0c9-fd8f56459959.webp" aria-label="Screenshot 4">
+            <img src="https://static2.vrdb.app/images/f201d647-52e6-4039-a0c9-fd8f56459959.webp" alt="" />
+          </button>
+        </div>
+        <div class="gallery-tabs" role="tablist">
+          <button class="gtab is-active"
+            data-src1="https://static2.vrdb.app/images/ee631827-42d1-4f3b-9b74-aad203515437.webp"
+            data-src2="https://static2.vrdb.app/images/df0651a5-b970-49cb-917a-e1fe57cd88bd.webp"
+            data-src3="https://static2.vrdb.app/images/f4cad4fb-adc4-44de-be21-79bd11dd52e2.webp"
+            data-src4="https://static2.vrdb.app/images/f201d647-52e6-4039-a0c9-fd8f56459959.webp">VR&nbsp;/&nbsp;MR</button>
+          <button class="gtab"
+            data-src1="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2313720/ss_b1315e7cbf82b4510f657ff59355699e915522b1.1920x1080.jpg?t=1777384480"
+            data-src2="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2313720/ss_d96f3a8cac1adc511718013cc3bba9cb515b3d88.1920x1080.jpg?t=1777384480"
+            data-src3="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2313720/ss_7d873961c00616bb8c1abfb010364414160e77f1.1920x1080.jpg?t=1777384480"
+            data-src4="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2313720/ss_c7df9ab36e805b9b0e8d5c657a380363facb67b7.1920x1080.jpg?t=1777384480">DESKTOP</button>
+        </div>
+      </div>
+    </div>
 
-				<div class="bottom">
+    <div class="project-info">
+      <div class="project-tag-row">
+        <span class="proj-num">PROJECT_04</span>
+        <time datetime="2023-11">NOV 2023</time>
+      </div>
+      <h3 class="project-title">Noun&nbsp;Town</h3>
+      <ul class="tags">
+        <li>Unity</li>
+        <li>C#</li>
+        <li>Cross-Platform</li>
+        <li>Learning</li>
+      </ul>
+      <p class="project-desc">
+        A language learning game where mastering vocabulary in VR, MR, or desktop brings a greyscale island back to life. Here I focused on shading work and minigame creation 
+        later on becoming the lead of the VR and MR part of the experience. Database, saves and cache management are also a major part of what made this project challening as
+        it currently feature full cross-progression compatibility across all of it's release and loads of different environments to play in.
+      </p>
+      <div class="project-links">
+        <a href="https://www.meta.com/experiences/noun-town-language-learning/5520452821357227/" class="btn" target="_blank" rel="noopener">META STORE ↗</a>
+        <a href="https://store.steampowered.com/app/1643100/Noun_Town_VR_Language_Learning/" class="btn ghost" target="_blank" rel="noopener">STEAM VR ↗</a>
+        <a href="https://store.steampowered.com/app/2313720/Noun_Town_Language_Learning/" class="btn ghost" target="_blank" rel="noopener">STEAM PC ↗</a>
+      </div>
+    </div>
+  </article>
+</section>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://twitter.com/ErikdbDev" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://github.com/6Axel9" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://linkedin.com/in/erikdibiase" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-						</ul>
+<!-- Honorable Mentions -->
+<section id="mentions" class="mentions">
+  <div class="section-head">
+    <span class="section-num">// 03</span>
+    <h2>HONORABLE&nbsp;MENTIONS</h2>
+    <span class="section-line"></span>
+  </div>
+  <div class="mentions-grid">
 
-				</div>
+    <!-- The Great Explorer -->
+    <article class="mention-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/v8wKEdyDUSI"
+          referrerpolicy='strict-origin-when-cross-origin'
+          title="The Great Explorer – AR game at the National Maritime Museum"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="mention-info">
+        <div>
+          <p class="mention-label">CLIENT PROJECT</p>
+          <h3 class="mention-title">The Great Explorer</h3>
+          <p class="mention-context">National Maritime Museum · Greenwich · 2019</p>
+        </div>
+        <ul class="tags">
+          <li>AR</li>
+          <li>Unity</li>
+          <li>C#</li>
+          <li>Educational</li>
+        </ul>
+        <p class="mention-desc">
+          An augmented reality scavenger hunt built for the National Maritime Museum in Greenwich.
+          Players explore a giant interactive map, discover ports and countries, build a crew,
+          and level up from Explorer to Grand Admiral.
+        </p>
+      </div>
+    </article>
 
-			</div>
+    <!-- Meta Presence Platform Hackathon -->
+    <article class="mention-card">
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/6qnNwFUcR24"
+          referrerpolicy='strict-origin-when-cross-origin'
+          title="Presence Platform Hackathon London 2023"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="mention-info">
+        <div>
+          <p class="mention-label">HACKATHON WINNER</p>
+          <h3 class="mention-title">Presence Platform Hackathon</h3>
+          <p class="mention-context">Meta · London · Dec 2023</p>
+        </div>
+        <ul class="tags">
+          <li>Mixed Reality</li>
+          <li>Meta Quest Pro</li>
+          <li>48h</li>
+        </ul>
+        <p class="mention-desc">
+          Won Meta's 48-hour Presence Platform Hackathon in London with the prototype that
+          later shipped as <em>Project Aeroes</em> — a mixed reality arcade game now available
+          on Meta Quest.
+        </p>
+      </div>
+    </article>
 
-		<!-- Main -->
-			<div id="main">
+  </div>
+</section>
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+<!-- About -->
+<section id="about" class="about">
+  <div class="section-head">
+    <span class="section-num">// 04</span>
+    <h2>ABOUT</h2>
+    <span class="section-line"></span>
+  </div>
+  <div class="about-grid">
+    <p class="about-lead">
+      I'm a developer that gets things done, with passion and eye for details — specialized 
+      in immersive content and virtual worlds.
+    </p>
+    <div class="about-list">
+      <div><span>STACK</span><p>Unity · Unreal · Godot · C# · C++ · HLSL/GLSL · Git</p></div>
+      <div><span>FOCUS</span><p>Gameplay programming, shaders, procedural systems, tooling, mixed reality</p></div>
+      <div><span>BASED IN</span><p>Bologna, IT — open to remote</p></div>
+    </div>
+  </div>
+</section>
 
-							<header>
-								<h2 class="alt">Developer for Mobile, Console and PC games</h2>
-								<p>Primarily using <strong>C++/C#</strong> languages and game engines such as <strong>Unreal</strong> or <strong>Unity</strong></p>
-								
-							</header>
+<!-- Contact / Footer -->
+<footer id="contact" class="site-footer">
+  <div class="footer-headline">
+      Open to <span class="footer-italic">new</span> projects.
+  </div>
+  <a href="mailto:erikdibiase@pec.net" class="email">erikdibiase@pec.net</a>
+  <div class="footer-meta">
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/erikdibiase/" target="_blank" rel="noopener">LINKEDIN</a>
+    </div>
+    <div class="copy">© 2026 — ALL PIXELS RESERVED</div>
+  </div>
+</footer>
 
-							<footer>
-								<a href="http://www.erikdibiase.com/ErikdiBiaseCV.pdf" class="button scrolly">Curriculum</a>
-							</footer>
+<script>
+  // Gallery: click thumbnail -> swap main image, mark active
+  document.querySelectorAll('.gallery').forEach(gallery => {
+    const main = gallery.querySelector('.gallery-main img');
+    const numEl = gallery.querySelector('.caption-num');
+    const totalEl = gallery.querySelector('.caption-total');
+    const thumbs = gallery.querySelectorAll('.thumb');
 
-						</div>
-					</section>
+    if (totalEl) totalEl.textContent = String(thumbs.length).padStart(2, '0');
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener('click', () => {
+        const src = thumb.dataset.src;
+        if (!src || !main) return;
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
+        // fade swap
+        main.style.opacity = '0';
+        setTimeout(() => {
+          main.src = src;
+          main.style.opacity = '1';
+        }, 150);
 
-							<p>This are just some of the completed projects i worked on while completeing my studies</p>
+        thumbs.forEach(t => t.classList.remove('is-active'));
+        thumb.classList.add('is-active');
 
-							<div class="row">
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/6Axel9/t-wrecks" class="image fit"><img src="images/pic02.png" alt="" /></a>
-										<header>
-											<h3>T-Wrecks</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/6Axel9/golemoutrun" class="image fit"><img src="images/pic03.png" alt="" /></a>
-										<header>
-											<h3>Golem Outrun</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u 12u$(mobile)">
-									<article class="item">
-										<a href="http://www.erikdibiase.com/IsoSnake3D" class="image fit"><img src="images/pic04.png" alt="" /></a>
-										<header>
-											<h3>Iso Snake</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/6Axel9/protodev" class="image fit"><img src="images/pic05.png" alt="" /></a>
-										<header>
-											<h3>Planetary Exploration Nanobot 15</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u$ 12u$(mobile)">
-									<article class="item">
-										<a href="https://github.com/6Axel9/redaxegl" class="image fit"><img src="images/pic06.png" alt="" /></a>
-										<header>
-											<h3>Procedural Environment</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/6Axel9/motormurder" class="image fit"><img src="images/pic07.png" alt="" /></a>
-										<header>
-											<h3>Motor Murder</h3>
-										</header>
-									</article>
-								</div>
-							</div>
+        if (numEl) numEl.textContent = String(i + 1).padStart(2, '0');
+      });
+    });
+  });
 
-						</div>
-					</section>
+  // Gallery tabs: click tab -> swap full screenshot set, mark active
+  document.querySelectorAll('.gallery-tabs').forEach(tabs => {
+    const gallery = tabs.closest('.gallery');
+    const mainImg = gallery.querySelector('.gallery-main img');
+    const numEl = gallery.querySelector('.caption-num');
+    const thumbBtns = gallery.querySelectorAll('.thumb');
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+    tabs.querySelectorAll('.gtab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.querySelectorAll('.gtab').forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+        const srcs = [tab.dataset.src1, tab.dataset.src2, tab.dataset.src3, tab.dataset.src4];
 
-							<a href="#" class="image featured"><img src="images/banner.png" alt="" /></a>
+        mainImg.style.opacity = '0';
+        setTimeout(() => {
+          mainImg.src = srcs[0];
+          mainImg.style.opacity = '1';
+        }, 150);
 
-							<p>Developing games is my hobbie passion and work, I'am alsways in pursuit of new and interesting shading and post-processing effects achievable thanks to APIs like OpenGL and Vulkan 
-								having studied them throughout my entire bachelor degree and as of now I'm actually developing Augmented Reality eperiencies for mobile thanks to Vuforia and ARcore to be released in the near future</p>
-						</div>
-					</section>
+        thumbBtns.forEach((thumb, i) => {
+          thumb.dataset.src = srcs[i];
+          thumb.querySelector('img').src = srcs[i];
+          thumb.classList.toggle('is-active', i === 0);
+        });
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+        if (numEl) numEl.textContent = '01';
+      });
+    });
+  });
 
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Please do not hesitate to contact me for more informations</p>
-
-							<form method="post" action="https://formspree.io/oberonx10@gmail.com">
-								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="Email" /></div>
-									<div class="12u$"><textarea name="message" placeholder="Message"></textarea></div>
-									<div class="12u$"><input type="submit" value="Send Message" /></div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  // Video tabs: click tab -> swap iframe src, mark active
+  document.querySelectorAll('.video-tabs').forEach(tabs => {
+    const frame = tabs.previousElementSibling.querySelector('iframe');
+    tabs.querySelectorAll('.vtab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.querySelectorAll('.vtab').forEach(t => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+        frame.src = `https://www.youtube.com/embed/${tab.dataset.vid}`;
+      });
+    });
+  });
+</script>
+</body>
 </html>
